@@ -1,0 +1,20 @@
+.language-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.lang-btn {
+  padding: 8px 15px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lang-btn.active {
+  background-color: #4285f4;
+  color: white;
+}
