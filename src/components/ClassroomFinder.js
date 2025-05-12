@@ -30,7 +30,7 @@ const ClassroomFinder = ({ language, onLanguageChange }) => {
 
     try {
       console.log(`Aranan kod: ${code}`);
-      const url = `${API_BASE_URL}/codes/${code}?language=${language}`;
+      const url = `${API_BASE_URL}/class-rooms/${code}?language=${language}`;
       console.log(`API URL: ${url}`);
 
       const response = await fetch(url);

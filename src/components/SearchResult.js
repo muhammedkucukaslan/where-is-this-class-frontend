@@ -8,7 +8,7 @@ const SearchResult = ({ result, language }) => {
   if (!result) {
     return null;
   }
-
+  console.log("result",result.imageUrl);
   return (
     <div className="result-container">
       <div className="result-item">
@@ -30,7 +30,6 @@ const SearchResult = ({ result, language }) => {
           />
         </div>
       )}
-      
       <div className="result-item">
         <span className="result-label">{t('descriptionLabel')}: </span>
         <span>{result.description || '-'}</span>
